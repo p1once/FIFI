@@ -43,10 +43,23 @@ source .venv/bin/activate  # ou .venv\\Scripts\\activate sur Windows
 pip install -e .
 ```
 
+Sous Windows, vous pouvez automatiser cette étape avec `setup_env.bat` :
+
+```bat
+setup_env.bat
+```
+
 ## Utilisation
 
 ```bash
 fifi-app
+```
+
+Sur Windows, un script `run_fifi.bat` est fourni pour activer l'environnement virtuel
+et lancer l'application en une seule commande :
+
+```bat
+run_fifi.bat
 ```
 
 La première exécution crée un dossier de configuration dans `~/.config/fifi-app` (ou `%APPDATA%\\fifi-app%` sous Windows). Configurez vos clés API dans l'onglet **Paramètres** puis commencez vos analyses.
